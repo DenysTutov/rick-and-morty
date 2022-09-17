@@ -7,6 +7,8 @@ export const Filter = () => {
     handleChangeSortByDate,
     sortByEpisodes,
     handleChangeSortByEpisodes,
+    filter,
+    handleChangeFilter,
   } = useContext(FilterContext);
 
   return (
@@ -22,6 +24,17 @@ export const Filter = () => {
         <option value="decr">From max to min</option>
         <option value="incr">From min to max</option>
       </select>
+
+      <label>
+        <input
+          type="text"
+          name="filter"
+          title="Enter search name"
+          placeholder="Enter search name"
+          onChange={handleChangeFilter}
+          value={filter}
+        />
+      </label>
     </form>
   );
 };

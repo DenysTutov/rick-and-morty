@@ -1,12 +1,4 @@
-import { sortedByDate } from './sortedByDate';
-
-export const sortedByEpisodes = ({
-  allCharacters,
-  sortByDate,
-  sortByEpisodes,
-}) => {
-  const sortedByDateList = sortedByDate({ allCharacters, sortByDate });
-
+export const getSortedByEpisodes = ({ sortedByDateList, sortByEpisodes }) => {
   if (!sortByEpisodes) return sortedByDateList;
 
   return [...sortedByDateList].sort((a, b) => {

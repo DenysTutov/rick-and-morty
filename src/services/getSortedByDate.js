@@ -1,4 +1,4 @@
-export const sortedByDate = ({ allCharacters, sortByDate }) => {
+export const getSortedByDate = ({ allCharacters, sortByDate }) => {
   if (!sortByDate) return allCharacters;
 
   return [...allCharacters].sort((a, b) => {
