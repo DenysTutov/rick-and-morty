@@ -1,6 +1,3 @@
-import { useContext } from 'react';
-import { FilterContext } from '../App';
-
 import { CharacterItem } from 'components/CharacterItem/CharacterItem';
 import styles from './CharactersList.module.scss';
 
