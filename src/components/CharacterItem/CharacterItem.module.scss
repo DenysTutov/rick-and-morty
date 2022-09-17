@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  column-gap: 30px;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 25px;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cf000a;
+  }
+}
+
+.img {
+  border-radius: 50%;
+  object-fit: cover;
+}
